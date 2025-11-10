@@ -94,17 +94,24 @@ class DoraNextEditText : AppCompatEditText {
 
     private fun init(context: Context, attrs: AttributeSet?) {
         val a = context.obtainStyledAttributes(attrs, R.styleable.DoraNextEditText)
-        itemWidth = a.getDimensionPixelOffset(R.styleable.DoraNextEditText_dview_net_itemWidth, itemWidth)
-        borderWidth = a.getDimensionPixelOffset(R.styleable.DoraNextEditText_dview_net_borderWidth, borderWidth)
+        itemWidth =
+            a.getDimensionPixelOffset(R.styleable.DoraNextEditText_dview_net_itemWidth, itemWidth)
+        borderWidth = a.getDimensionPixelOffset(
+            R.styleable.DoraNextEditText_dview_net_borderWidth,
+            borderWidth
+        )
         outsideBorderWidth = borderWidth * 2
         borderColor = a.getColor(R.styleable.DoraNextEditText_dview_net_borderColor, borderColor)
         digitSize = a.getInt(R.styleable.DoraNextEditText_dview_net_digitSize, digitSize)
-        cursorWidth = a.getDimensionPixelSize(R.styleable.DoraNextEditText_dview_net_cursorWidth, cursorWidth)
+        cursorWidth =
+            a.getDimensionPixelSize(R.styleable.DoraNextEditText_dview_net_cursorWidth, cursorWidth)
         cursorColor = a.getColor(R.styleable.DoraNextEditText_dview_net_cursorColor, cursorColor)
         textColor = a.getColor(R.styleable.DoraNextEditText_dview_net_textColor, textColor)
-        textSize = a.getDimensionPixelOffset(R.styleable.DoraNextEditText_dview_net_textSize, textSize)
+        textSize =
+            a.getDimensionPixelOffset(R.styleable.DoraNextEditText_dview_net_textSize, textSize)
         autoFocus = a.getBoolean(R.styleable.DoraNextEditText_dview_net_autoFocus, autoFocus)
-        drawCipherText = a.getBoolean(R.styleable.DoraNextEditText_dview_net_drawCipherText, drawCipherText)
+        drawCipherText =
+            a.getBoolean(R.styleable.DoraNextEditText_dview_net_drawCipherText, drawCipherText)
         a.recycle()
         isCursorVisible = false
         inputType = EditorInfo.TYPE_CLASS_NUMBER or EditorInfo.TYPE_NUMBER_VARIATION_PASSWORD
