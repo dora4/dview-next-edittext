@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="DoraNextEditText">
+        <attr name="dview_net_itemWidth" format="dimension|reference" />
+        <attr name="dview_net_borderWidth" format="dimension|reference" />
+        <attr name="dview_net_borderColor" format="color|reference" />
+        <attr name="dview_net_digitSize" format="integer" />
+        <attr name="dview_net_cursorWidth" format="dimension|reference" />
+        <attr name="dview_net_cursorColor" format="color|reference" />
+        <attr name="dview_net_textColor" format="color|reference" />
+        <attr name="dview_net_textSize" format="dimension|reference" />
+        <attr name="dview_net_autoFocus" format="boolean" />
+        <attr name="dview_net_drawCipherText" format="boolean" />
+    </declare-styleable>
+</resources>
